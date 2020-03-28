@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/Initialiser.h
+game.h
+C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/game.h
+
+C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/game.h
+stdbool.h
+C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/stdbool.h
+
+C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/main.c
+stdio.h
+-
+stdbool.h
+-
+stdlib.h
+-
+time.h
+-
+Initialiser.h
+C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/Initialiser.h
+
