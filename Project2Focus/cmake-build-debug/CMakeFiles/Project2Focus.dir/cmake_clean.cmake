@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Project2Focus.dir/Initialiser.c.obj"
+  "CMakeFiles/Project2Focus.dir/Stack.c.obj"
   "CMakeFiles/Project2Focus.dir/game.c.obj"
+  "CMakeFiles/Project2Focus.dir/logic.c.obj"
   "CMakeFiles/Project2Focus.dir/main.c.obj"
   "Project2Focus.exe"
   "Project2Focus.exe.manifest"

@@ -9,4 +9,5 @@
 void print_board(square board[BOARD_SIZE][BOARD_SIZE]);
 unsigned int CoinToss();
 void initialize_players(player players[PLAYERS_NUM]);
+void print_board_update(square board[BOARD_SIZE][BOARD_SIZE]);
 #endif //PROJECT2FOCUS_INITIALISER_H

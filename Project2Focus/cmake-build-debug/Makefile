@@ -149,6 +149,33 @@ Initialiser.c.s:
 	$(MAKE) -f CMakeFiles\Project2Focus.dir\build.make CMakeFiles/Project2Focus.dir/Initialiser.c.s
 .PHONY : Initialiser.c.s
 
+Stack.obj: Stack.c.obj
+
+.PHONY : Stack.obj
+
+# target to build an object file
+Stack.c.obj:
+	$(MAKE) -f CMakeFiles\Project2Focus.dir\build.make CMakeFiles/Project2Focus.dir/Stack.c.obj
+.PHONY : Stack.c.obj
+
+Stack.i: Stack.c.i
+
+.PHONY : Stack.i
+
+# target to preprocess a source file
+Stack.c.i:
+	$(MAKE) -f CMakeFiles\Project2Focus.dir\build.make CMakeFiles/Project2Focus.dir/Stack.c.i
+.PHONY : Stack.c.i
+
+Stack.s: Stack.c.s
+
+.PHONY : Stack.s
+
+# target to generate assembly for a file
+Stack.c.s:
+	$(MAKE) -f CMakeFiles\Project2Focus.dir\build.make CMakeFiles/Project2Focus.dir/Stack.c.s
+.PHONY : Stack.c.s
+
 game.obj: game.c.obj
 
 .PHONY : game.obj
@@ -175,6 +202,33 @@ game.s: game.c.s
 game.c.s:
 	$(MAKE) -f CMakeFiles\Project2Focus.dir\build.make CMakeFiles/Project2Focus.dir/game.c.s
 .PHONY : game.c.s
+
+logic.obj: logic.c.obj
+
+.PHONY : logic.obj
+
+# target to build an object file
+logic.c.obj:
+	$(MAKE) -f CMakeFiles\Project2Focus.dir\build.make CMakeFiles/Project2Focus.dir/logic.c.obj
+.PHONY : logic.c.obj
+
+logic.i: logic.c.i
+
+.PHONY : logic.i
+
+# target to preprocess a source file
+logic.c.i:
+	$(MAKE) -f CMakeFiles\Project2Focus.dir\build.make CMakeFiles/Project2Focus.dir/logic.c.i
+.PHONY : logic.c.i
+
+logic.s: logic.c.s
+
+.PHONY : logic.s
+
+# target to generate assembly for a file
+logic.c.s:
+	$(MAKE) -f CMakeFiles\Project2Focus.dir\build.make CMakeFiles/Project2Focus.dir/logic.c.s
+.PHONY : logic.c.s
 
 main.obj: main.c.obj
 
@@ -215,9 +269,15 @@ help:
 	@echo ... Initialiser.obj
 	@echo ... Initialiser.i
 	@echo ... Initialiser.s
+	@echo ... Stack.obj
+	@echo ... Stack.i
+	@echo ... Stack.s
 	@echo ... game.obj
 	@echo ... game.i
 	@echo ... game.s
+	@echo ... logic.obj
+	@echo ... logic.i
+	@echo ... logic.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

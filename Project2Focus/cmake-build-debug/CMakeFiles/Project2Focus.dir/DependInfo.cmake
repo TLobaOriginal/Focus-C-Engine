@@ -5,7 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/Initialiser.c" "C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/cmake-build-debug/CMakeFiles/Project2Focus.dir/Initialiser.c.obj"
+  "C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/Stack.c" "C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/cmake-build-debug/CMakeFiles/Project2Focus.dir/Stack.c.obj"
   "C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/game.c" "C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/cmake-build-debug/CMakeFiles/Project2Focus.dir/game.c.obj"
+  "C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/logic.c" "C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/cmake-build-debug/CMakeFiles/Project2Focus.dir/logic.c.obj"
   "C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/main.c" "C:/Users/Joseph Tobi Ogunbiyi/CLionProjects/Project2Focus/cmake-build-debug/CMakeFiles/Project2Focus.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

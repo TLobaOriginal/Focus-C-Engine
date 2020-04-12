@@ -31,6 +31,7 @@ typedef struct player{
     char name[21];
     //Number of pieces captured
     int captured;
+    int reserved;
     //Number of pieces that the player has
     int total_pieces;
     //win or false
