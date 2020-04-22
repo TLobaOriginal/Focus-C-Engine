@@ -11,4 +11,6 @@ bool WinChecker(square board[BOARD_SIZE][BOARD_SIZE], player myplayer);
 void Winner(player winner);
 void TurnSwitch(color *turn);
 bool Available(square board[BOARD_SIZE][BOARD_SIZE], player myplayer);
+void Intro();
 #endif //PROJECT2FOCUS_TURN_H
+

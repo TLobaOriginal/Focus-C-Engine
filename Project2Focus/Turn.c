@@ -127,3 +127,20 @@ void TurnSwitch(color *turn)
     else
         *turn = RED;
 }
+
+void Intro()
+{
+    puts("Welcome to Focus.");
+    puts("There are two players. The rules have been displayed on the box of the game");
+    puts("The way for you to pick a piece is by entering in the coordinates for example row: 2, column: 3 will be equivalent to (1,2)");
+    puts("You'll be asked 'Row:' and you can enter 1 to access row 1 and the same goes for picking columns");
+    printf("\tMOVEMENT\nW = Up\nA = Left\nD = Right\nS = Down\n\n\n");
+
+    puts("----------------------Rules----------------------\n"
+         "If there are no pieces left for your opponent to place or move they lose.\n"
+         "Each stack can only contain 5 pieces.\n"
+         "If another piece is placed on top of the a stack with the max number of pieces, then the bottom piece is removed.\n"
+         "Should the bottom piece be the opponent's then you've captured it and it cannot be used again.\n"
+         "If it be your own then you can bring it back in whenever you desire.\n"
+         "The stack cannot be split as in other versions of the game.\n\n");
+}
