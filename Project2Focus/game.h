@@ -66,5 +66,8 @@ typedef struct square {
 
 //Function to create the board
 void initialize_board(square board[BOARD_SIZE][BOARD_SIZE]);
-
+void set_empty(square * s);
+void set_green(square * s);
+void set_red(square * s);
+void set_invalid(square * s);
 #endif //PROJECT2FOCUS_GAME_H

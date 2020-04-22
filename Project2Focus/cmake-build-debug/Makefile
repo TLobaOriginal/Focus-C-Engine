@@ -176,6 +176,33 @@ Stack.c.s:
 	$(MAKE) -f CMakeFiles\Project2Focus.dir\build.make CMakeFiles/Project2Focus.dir/Stack.c.s
 .PHONY : Stack.c.s
 
+Turn.obj: Turn.c.obj
+
+.PHONY : Turn.obj
+
+# target to build an object file
+Turn.c.obj:
+	$(MAKE) -f CMakeFiles\Project2Focus.dir\build.make CMakeFiles/Project2Focus.dir/Turn.c.obj
+.PHONY : Turn.c.obj
+
+Turn.i: Turn.c.i
+
+.PHONY : Turn.i
+
+# target to preprocess a source file
+Turn.c.i:
+	$(MAKE) -f CMakeFiles\Project2Focus.dir\build.make CMakeFiles/Project2Focus.dir/Turn.c.i
+.PHONY : Turn.c.i
+
+Turn.s: Turn.c.s
+
+.PHONY : Turn.s
+
+# target to generate assembly for a file
+Turn.c.s:
+	$(MAKE) -f CMakeFiles\Project2Focus.dir\build.make CMakeFiles/Project2Focus.dir/Turn.c.s
+.PHONY : Turn.c.s
+
 game.obj: game.c.obj
 
 .PHONY : game.obj
@@ -272,6 +299,9 @@ help:
 	@echo ... Stack.obj
 	@echo ... Stack.i
 	@echo ... Stack.s
+	@echo ... Turn.obj
+	@echo ... Turn.i
+	@echo ... Turn.s
 	@echo ... game.obj
 	@echo ... game.i
 	@echo ... game.s

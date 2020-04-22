@@ -10,4 +10,5 @@ void Myturn(player *me, square board[BOARD_SIZE][BOARD_SIZE]);
 void ProcessMoves(const char moves[], int steps, int row, int col, int position[]);
 void movement(square board[BOARD_SIZE][BOARD_SIZE], int row, int col, int position[]);
 void updates(int position[], square board[BOARD_SIZE][BOARD_SIZE], int originalRow, int originalCol);
+void reservation(player *me, square board[BOARD_SIZE][BOARD_SIZE]);
 #endif //PROJECT2FOCUS_LOGIC_H

@@ -3,27 +3,26 @@
 //
 
 #include "game.h"
-#include "Stack.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 
 //Set Invalid Squares (where it is not possible to place stacks)
-set_invalid(square * s){
+void set_invalid(square * s){
 s->type = INVALID;
 s->stack = NULL;
 s->num_pieces = 0;
 }
 
 //Set Empty Squares (with no pieces/stacks)
-set_empty(square * s){
+void set_empty(square * s){
 s->type = VALID;
 s->stack = NULL;
 s->num_pieces = 0;
 }
 
 //Set squares  with a GREEN piece
-set_green(square * s){
+void set_green(square * s){
 s->type = VALID;
 s->stack = (piece *) malloc (sizeof(piece));
 s->stack->p_color = GREEN;
@@ -32,7 +31,7 @@ s->num_pieces = 1;
 }
 
 //Set squares with a RED piece
-set_red(square * s){
+void set_red(square * s){
 s->type = VALID;
 s->stack = (piece *) malloc (sizeof(piece));
 s->stack->p_color = RED;
@@ -73,40 +72,37 @@ void initialize_board(square board [BOARD_SIZE][BOARD_SIZE]){
 
 void print_board_update(square board[BOARD_SIZE][BOARD_SIZE]){
     printf("****** The Board ******\n");
-    square * current_square = (square *)malloc(sizeof(square));
+/*This updated version of print board allows to print the board and shows how many pieces are in a stack*/
     for(int i = 0; i < BOARD_SIZE; i ++)
     {
         for (int j = 0; j < BOARD_SIZE; j++)
         {
-            if(board[i][j].type == VALID)
+            if(board[i][j].type == VALID) //If it is a valid piece then
             {
-                current_square = &board[i][j];
-                current_square->stack = receivetop(board[i][j].stack);
-                //puts("Hello");
-                if(current_square->stack == NULL)
+                if(board[i][j].stack == NULL) //We check if it's an empty square
                     printf("|   ");
                 else{
-                    if (current_square->stack->p_color == GREEN && !(current_square->num_pieces > 1)){
+                    if (board[i][j].stack->p_color == GREEN && board[i][j].num_pieces == 1){ //If it is a square with one piece
                         printf("| G ");
                     }
-                    else if(current_square->stack->p_color == RED && !(current_square->num_pieces > 1)){
+                    else if(board[i][j].stack->p_color == RED && board[i][j].num_pieces == 1){
                         printf("| R ");
                     }
-                    if(current_square->stack != NULL && current_square->num_pieces > 1)
+                    if(board[i][j].stack != NULL && board[i][j].num_pieces > 1) //With more than one piece we must show how many piece are there
                     {
-                        if (current_square->stack->p_color == GREEN)
+                        if (board[i][j].stack->p_color == GREEN)
                         {
-                            printf("| G%d", current_square->num_pieces);
+                            printf("| G%d", board[i][j].num_pieces);
                         }
                         else{
-                            printf("| R%d", current_square->num_pieces);
+                            printf("| R%d", board[i][j].num_pieces);
                         }
                     }
                 }
             }
-            else
+            else //If it is not a valid piece then
                 printf("| - ");
         }
-        printf("|\n");
+        printf("|\n"); //Tot the next row
     }
 }
