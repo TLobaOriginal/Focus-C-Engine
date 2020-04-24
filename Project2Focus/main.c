@@ -40,7 +40,10 @@ int main() {
     while(WinChecker(board, players[0]) == false && WinChecker(board, players[1]) == false) //This loop will only end the moment a winner has been found
     {
         ThisTurn(players, board, turn);
-        TurnSwitch(&turn);
+        if(turn == RED)
+            turn = GREEN; //Turn switch
+        else
+            turn = RED;
     }
 
     /*When the loop ends this happens

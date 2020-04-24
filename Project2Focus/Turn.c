@@ -120,14 +120,6 @@ void Winner(player winner)
     puts("WELL DONE!!");
 }
 
-void TurnSwitch(color *turn)
-{
-    if(turn == RED)
-        *turn = GREEN; //Turn switch
-    else
-        *turn = RED;
-}
-
 void Intro()
 {
     puts("Welcome to Focus.");
