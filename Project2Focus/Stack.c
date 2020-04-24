@@ -115,35 +115,3 @@ void stacking(const int position[], square board[BOARD_SIZE][BOARD_SIZE], size_t
     printf("%s has %d pieces captured\n",me->name, me->captured);
     printf("%s has %d pieces reserved\n",me->name, me->reserved);
 }
-
-color pop(piece *this_stack)
-{
-    piece *curr = this_stack;
-    int i = 1;
-    while(curr != NULL)
-    {
-        printf("%dth iteration\n", i);
-        if(curr->next != NULL)
-            curr = curr->next;
-        else if(curr->next == NULL)
-            break;
-        i++;
-    }
-    piece *last = curr;
-    color removed = last->p_color;
-    last = NULL;
-
-    switch(removed)
-    {
-        case(RED):
-            puts("RED");
-            break;
-        case(GREEN):
-            puts("GREEN");
-            break;
-        default:
-            puts("ERROR");
-            break;
-    }
-    return removed;
-}
