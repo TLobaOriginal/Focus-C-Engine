@@ -101,7 +101,7 @@ bool Available(square board[BOARD_SIZE][BOARD_SIZE], player myplayer)
     return false;
 }
 
-void Winner(player winner)
+void Winner(player winner, player loser)
 {
     printf("%s HAS ONE THE GAME!!!!\n", winner.name);
     switch(winner.player_color)
@@ -115,8 +115,12 @@ void Winner(player winner)
         default:
             puts("ERROR");
     }
+
+    winner.total_pieces = winner.total_pieces - loser.captured;
+    printf("%s's has %d reserved pieces.\n", winner.name, winner.total_pieces);
     printf("%s's has %d reserved pieces.\n", winner.name, winner.reserved);
     printf("%s's has %d captured pieces.\n", winner.name, winner.captured);
+
     puts("WELL DONE!!");
 }
 

@@ -49,9 +49,9 @@ int main() {
     /*When the loop ends this happens
      * We check to see if the current player can move or not and if it returns true then the other player has one*/
     if(WinChecker(board, players[0]) == true)
-        Winner(players[1]); //Green wins if Red can't move
+        Winner(players[1], players[0]); //Green wins if Red can't move
     else if(WinChecker(board, players[1]) == true)
-        Winner(players[0]); //Red wins if Green can't move
+        Winner(players[0], players[1]); //Red wins if Green can't move
 
     return 0;
 }
