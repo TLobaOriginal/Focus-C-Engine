@@ -23,7 +23,7 @@ void initialize_players(player players[PLAYERS_NUM]){
         players[i].total_pieces = 18; //Everyone starts off with 18 pieces
         players[i].reserved = 0;
         players[i].win = false; //Win will start on false
-        printf("Player %d, enter your name(MAX 14 CHARACTERS): ",i+1);
+        printf("Player %d, enter your name(MAX 20 CHARACTERS): ",i+1);
         fgets(players[i].name, 20, stdin); //We can initialise the player name
         printf("%s has %d pieces left, %d adversary pieces captured and %d pieces reserved\n", players[i].name, players[i].total_pieces, players[i].captured, players[i].reserved);
         puts("");
