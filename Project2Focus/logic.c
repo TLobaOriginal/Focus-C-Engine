@@ -102,6 +102,14 @@ void movement(square board[BOARD_SIZE][BOARD_SIZE], int row, int col, int positi
         }
     }
     ProcessMoves(these_moves, move_number, row, col, position);
+    if((position[0] < 0 || position[0] > 8) || (position[1] < 0) || position[1] > 8)//If this goes off the board then we will correct this position until it's right
+    {
+        puts("This position is not on the board");
+        int newpositions[2];
+        movement(board, row, col, newpositions);
+        position[0] = newpositions[0];
+        position[1] = newpositions[1];
+    }
 }
 
 void ProcessMoves(const char moves[], int steps, int row, int col, int position[])
@@ -124,7 +132,7 @@ void ProcessMoves(const char moves[], int steps, int row, int col, int position[
         position[0] = row;
     //Now for the column number to be calculated
     if(position[1] != 0)
-        position[1] = col + horizontal; //This will change the columns by the horozontal number (If A or S is pressed)
+        position[1] = col + horizontal; //This will change the columns by the horizontal number (If A or S is pressed)
     else
         position[1] = col;
 }
